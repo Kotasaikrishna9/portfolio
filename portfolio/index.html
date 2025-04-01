@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Navigation menu  -->
+    <nav id="desktop-nav">
+      <div class="logo">Krishna's Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <!--<li><a href="#certifications" >Certifications</a></li>-->
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hamburger menu -->
+    <nav id="hamburger-nav">
+      <div class="logo">Sai Krishna</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <!-- <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li> -->
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- profile section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-main.png" alt="Krishna's profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sai Krishna</h1>
+        <p class="section__text__p2">
+          Quality Assurance Engineer
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')"> View Resume </button>
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')"> View CV </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'"> Contact Info </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/sai-krishna-kota-052152308'" />
+          <img src="./assets/insta.png" alt="My Insta profile" class="icon" onclick="location.href='https://www.instagram.com/krxsh.9'" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/'" />
+         
+        </div>
+      </div>
+    </section>
+
+   <!-- About section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-profile.jpg" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Certifications</h3>
+              <a href="#certifications">Click here</a>
+              </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <a href="https://drive.google.com/drive/folders/1DkuCAdJ0gQp-oDkScQVfIR1LT7k2WHeH"><p> B.Tech </p></a>
+              <a href="./assets/diploma.png"><p> Diploma </p></a>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                I am currently pursuing my B.Tech in Information Technology (3rd Year) and aspiring to become a Quality Assurance Engineer. 
+                My passion lies in ensuring the delivery of high-quality software through comprehensive testing. With expertise in both manual and automation testing,
+                In addition to Quality Assurance, I am skilled in cybersecurity, particularly penetration testing, where I apply my knowledge to identify and mitigate security vulnerabilities.
+                I also possess foundational knowledge of the MERN stack, equipping me with the tools necessary to work in full-stack development environments.
+                I am committed to continuous learning and honing my skills to stay at the forefront of technology. My goal is to leverage my diverse skill set to contribute to high-quality software development and security.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- certifications section
+    <section id="certifications">
+      <p class="section__text__p1">Here are my </p>
+      <h1 class="title">Certifications</h1>
+      <div class="certification-detail-container">
+        <div class="about-container">
+          <!-- testing 
+           <div class="details-container">
+            <h2 class="certificate-title">Testing</h2>
+            <div class="cert-container">
+              <article>
+                <img src="./assets/project-2.png" alt="nptel" class="certificate-1"/>
+                <div class="btn-container"><button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')"> View Certificate </button></div>
+              </article>
+              <article>
+                <img src="./assets/project-2.png" alt="nptel" class="certificate-1"/>
+                <div class="btn-container"><button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')"> View Certificate </button></div>
+              </article>
+              <article>
+                <img src="./assets/project-2.png" alt="nptel" class="certificate-1"/>
+                <div class="btn-container"><button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')"> View Certificate </button></div>            </div>
+           </div>
+        </div>
+      </div>>
+      <!-- cybersecurity 
+      <div class="details-container">
+        <h2 class="certificate-title">Cyber Security</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/project-2.png" alt="nptel" class="certificate-1"/>
+            <button class="btn btn-color2-2 cert-btn" onclick="location.href=''">View Certificate</button>
+          </article>
+          <article>
+            <img src="./assets/project-2.png" alt="nptel" class="certificate-1"/>
+            <button class="btn btn-color2-2 cert-btn" onclick="location.href=''">View Certificate</button>
+          </article>
+          <article>
+            <img src="./assets/project-2.png" alt="nptel" class="certificate-1"/>
+            <button class="btn btn-color2-2 cert-btn" onclick="location.href=''">View Certificate</button>
+        </div>
+       </div>
+       <!-- programming 
+       <div class="details-container">
+        <h2 class="certificate-title">Programming</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/project-2.png" alt="nptel" class="certificate-1"/>
+            <button class="btn btn-color2-2 cert-btn" onclick="location.href=''">View Certificate</button>
+          </article>
+          <article>
+            <img src="./assets/project-2.png" alt="nptel" class="certificate-1"/>
+            <button class="btn btn-color2-2 cert-btn" onclick="location.href=''">View Certificate</button>
+          </article>
+          <article>
+            <img src="./assets/project-2.png" alt="nptel" class="certificate-1"/>
+            <button class="btn btn-color2-2 cert-btn" onclick="location.href=''">View Certificate</button>
+        </div>
+       </div>
+    </section> -->
+    
+    <!-- skills section -->
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+
+          <!-- 1st role -->
+          <div class="details-container">
+            <h2 class="skills-sub-title">Quality Assurance</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div> <h3>Jira</h3> <p>Experienced</p> </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div> <h3>Bugzilla</h3> <p>Experienced</p> </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div> <h3>Selenium</h3> <p>Intermediate</p> </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div> <h3>Playwright</h3> <p>Basic</p> </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- 2nd role -->
+          <div class="details-container">
+            <h2 class="skills-sub-title">Cyber Security</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div> <h3>Burp suite</h3> <p>Basic</p> </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div> <h3>Nmap</h3> <p>Intermediate</p> </div>
+              </article>
+             </div>
+          </div>
+
+
+           <!-- 3rd role -->
+           <div class="details-container">
+            <h2 class="skills-sub-title">Developer</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div> <h3>HTML</h3> <p>Experienced</p> </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div> <h3>CSS & Tailwind CSS</h3> <p>Experienced</p> </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div> <h3>JavaScript</h3> <p>Experienced</p> </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div> <h3>Java</h3> <p>Experienced</p> </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div> <h3>SQL & Mongo DB</h3> <p>Experienced</p> </div>
+              </article>
+             </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    
+    </section>
+
+    <!-- projects section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+            <!-- project card 1 -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.jpg" alt="Project 1" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">SideGigLocator</h2>
+                <div class="btn-container">
+                   <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                   <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>
+            <!-- project card 2 -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Education to People having no access to formal education
+                </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>
+
+        </div>
+      </div>
+  
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+          <p><a href="mailto:krxsh99@gmail.com">krxsh99@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/call-icon.png" alt="Email icon" class="icon contact-icon email-icon"/>
+          <p><a href="tel:+919398993319"> 9398993319 </a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+          <p><a href="https://www.linkedin.com/krishna3019">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
